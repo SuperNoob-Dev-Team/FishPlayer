@@ -338,3 +338,7 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+
+# FFmpeg的文件，版权原因无法上传
+FishPlayer/FFmpegBin/*.exe
+FishPlayer/FFmpegBin/*.dll

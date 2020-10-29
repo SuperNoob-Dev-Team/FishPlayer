@@ -4,11 +4,60 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <StartupObject>FishPlayer.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FFmpeg.AutoGen" Version="4.2.2.2" />
+    <PackageReference Include="FFME.Windows" Version="4.2.330" />
+    <PackageReference Include="FFmpeg.AutoGen" Version="4.3.1" />
     <PackageReference Include="Panuon.UI.Silver" Version="2.0.0.5-alpha" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="FFmpegBin\avcodec-58.dll">
+      <Link>mlib\avcodec-58.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpegBin\avdevice-58.dll">
+      <Link>mlib\avdevice-58.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpegBin\avfilter-7.dll">
+      <Link>mlib\avfilter-7.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpegBin\avformat-58.dll">
+      <Link>mlib\avformat-58.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpegBin\avutil-56.dll">
+      <Link>mlib\avutil-56.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpegBin\ffmpeg.exe">
+      <Link>mlib\ffmpeg.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpegBin\ffplay.exe">
+      <Link>mlib\ffplay.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpegBin\ffprobe.exe">
+      <Link>mlib\ffprobe.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpegBin\postproc-55.dll">
+      <Link>mlib\postproc-55.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpegBin\swresample-3.dll">
+      <Link>mlib\swresample-3.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="FFmpegBin\swscale-5.dll">
+      <Link>mlib\swscale-5.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
